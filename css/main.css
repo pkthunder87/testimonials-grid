@@ -1,0 +1,108 @@
+/* =============
+   Start of reset 
+   ============= */
+/* 
+A reset by:
+https://piccalil.li/blog/a-more-modern-css-reset/
+Also made some adjustments for my own needs  
+*/
+:root {
+  --accent-red: hsl(0, 78%, 62%);
+  --accent-cyan: hsl(180, 62%, 55%);
+  --accent-orange: hsl(34, 97%, 64%);
+  --accent-blue: hsl(212, 86%, 64%);
+  --neutral-dark-blue: hsl(234, 12%, 34%);
+  --neutral-grayish-blue: hsl(229, 6%, 66%);
+  --neutral-light-gray: hsl(0, 0%, 98%);
+}
+
+/* Box sizing rules */
+/* Remove initial margins */
+/* Apply font smoothing */
+*,
+*::before,
+*::after {
+  /*Box model stuff*/
+  margin: 0;
+  /*Miscellaneous*/
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* Prevent font size inflation */
+/* Simplifies rem calculations */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-size: 62.5%;
+}
+
+/* Set core body defaults */
+body {
+  /*Box model stuff*/
+  min-height: 100vh;
+  max-width: 100vw;
+  /*Typography stuff*/
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.6rem;
+}
+
+/* Remove list styles */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* =============
+   End of reset 
+   ============= */
+/* =============
+   Header
+   ============= */
+/* =============
+   Footer 
+   ============= */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* =============
+   Wrapper 
+   ============= */
+
+/*# sourceMappingURL=main.css.map */
