@@ -7,15 +7,12 @@ https://piccalil.li/blog/a-more-modern-css-reset/
 Also made some adjustments for my own needs  
 */
 :root {
-  --violet: hsl(263, 55%, 52%),
-  --dark-grayish-blue: hsl(217, 19%, 35%),
-  --dark-blackish-blue: hsl(219, 29%, 14%),
-  --white: hsl(0, 0%, 100%),
-
-  /// Neutral
-
-  --light-gray: hsl(0, 0%, 81%),
-  --ight-grayish-blue: hsl(210, 46%, 95%), ;
+  --violet: hsl(263, 55%, 52%);
+  --dark-grayish-blue: hsl(217, 19%, 35%);
+  --dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
 }
 
 /* Box sizing rules */
@@ -52,6 +49,7 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: 1.6rem;
+  background-color: var(--light-grayish-blue);
 }
 
 /* Remove list styles */
@@ -88,8 +86,69 @@ select {
    End of reset 
    ============= */
 /* =============
-   Header
+   Card
    ============= */
+:root {
+  --violet: hsl(263, 55%, 52%);
+  --dark-grayish-blue: hsl(217, 19%, 35%);
+  --dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+.card .profile__name {
+  color: var(--white);
+}
+.card .profile__grad {
+  color: var(--light-gray);
+}
+.card .subheading {
+  color: var(--white);
+}
+.card .quote {
+  color: var(--light-gray);
+}
+.card-rect-wide--1 {
+  background: var(--violet);
+}
+.card-rect-wide--2 {
+  background: var(--dark-blackish-blue);
+}
+.card-rect-wide--2 .profile__name,
+.card-rect-wide--2 .subheading {
+  color: var(--white);
+}
+.card-rect-wide--2 .profile__grad,
+.card-rect-wide--2 .quote {
+  color: var(--light-gray);
+}
+.card-rect-tall {
+  background: var(--white);
+}
+.card-rect-tall .profile__name,
+.card-rect-tall .subheading {
+  color: var(--dark-blackish-blue);
+}
+.card-rect-tall .profile__grad,
+.card-rect-tall .quote {
+  color: var(--dark-grayish-blue);
+}
+.card-box--1 {
+  background: var(--dark-grayish-blue);
+}
+.card-box--2 {
+  background: var(--white);
+}
+.card-box--2 .profile__name,
+.card-box--2 .subheading {
+  color: var(--dark-blackish-blue);
+}
+.card-box--2 .profile__grad,
+.card-box--2 .quote {
+  color: var(--dark-grayish-blue);
+}
+
 /* =============
    Footer 
    ============= */

@@ -1,3 +1,93 @@
 /* =============
-   Header
+   Card
    ============= */
+
+:root {
+  // Colors
+
+  /// Primary
+
+  --violet: hsl(263, 55%, 52%);
+  --dark-grayish-blue: hsl(217, 19%, 35%);
+  --dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+
+  /// Neutral
+
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+.card {
+  .profile__name {
+    color: var(--white);
+  }
+
+  .profile__grad {
+    color: var(--light-gray);
+  }
+
+  .subheading {
+    color: var(--white);
+  }
+
+  .quote {
+    color: var(--light-gray);
+  }
+
+  &-rect {
+    &-wide {
+      &--1 {
+        background: var(--violet);
+      }
+
+      &--2 {
+        background: var(--dark-blackish-blue);
+
+        .profile__name,
+        .subheading {
+          color: var(--white);
+        }
+
+        .profile__grad,
+        .quote {
+          color: var(--light-gray);
+        }
+      }
+    }
+
+    &-tall {
+      background: var(--white);
+
+      .profile__name,
+      .subheading {
+        color: var(--dark-blackish-blue);
+      }
+
+      .profile__grad,
+      .quote {
+        color: var(--dark-grayish-blue);
+      }
+    }
+  }
+
+  &-box {
+    &--1 {
+      background: var(--dark-grayish-blue);
+    }
+
+    &--2 {
+      background: var(--white);
+
+      .profile__name,
+      .subheading {
+        color: var(--dark-blackish-blue);
+      }
+
+      .profile__grad,
+      .quote {
+        color: var(--dark-grayish-blue);
+      }
+    }
+  }
+}
