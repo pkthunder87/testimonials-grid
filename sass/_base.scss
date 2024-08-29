@@ -11,18 +11,18 @@ Also made some adjustments for my own needs
 :root {
   // Colors
 
-  // Accent
-
-  --accent-red: hsl(0, 78%, 62%);
-  --accent-cyan: hsl(180, 62%, 55%);
-  --accent-orange: hsl(34, 97%, 64%);
-  --accent-blue: hsl(212, 86%, 64%);
-
-  // Neutral
-
-  --neutral-dark-blue: hsl(234, 12%, 34%);
-  --neutral-grayish-blue: hsl(229, 6%, 66%);
-  --neutral-light-gray: hsl(0, 0%, 98%);
+  /// Primary
+  
+  --violet: hsl(263, 55%, 52%),
+  --dark-grayish-blue: hsl(217, 19%, 35%),
+  --dark-blackish-blue: hsl(219, 29%, 14%),
+  --white: hsl(0, 0%, 100%),
+  
+  /// Neutral
+  
+  --light-gray: hsl(0, 0%, 81%),
+  --ight-grayish-blue: hsl(210, 46%, 95%),
+  
 }
 
 /* Box sizing rules */
