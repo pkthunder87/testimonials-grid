@@ -8,6 +8,10 @@ https://piccalil.li/blog/a-more-modern-css-reset/
 Also made some adjustments for my own needs  
 */
 
+/* =======================
+   Mobile: 600px and under
+   ======================= */
+
 :root {
   // Colors
 
@@ -101,3 +105,28 @@ select {
 /* =============
    End of reset 
    ============= */
+
+/* =====================
+   Tablet 600px - 900px
+   ===================== */
+
+@media (min-width: 600px) {
+  html {
+    font-size: 30%;
+  }
+
+  body {
+    padding-block: 3.6em;
+    padding-inline: 3.65vw;
+  }
+
+  .card-rect-tall {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 45%;
+  }
+}

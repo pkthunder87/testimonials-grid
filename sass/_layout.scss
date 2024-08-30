@@ -23,3 +23,21 @@
   flex-direction: column;
   gap: 7vw;
 }
+
+/* =====================
+   Tablet 600px - 900px
+   ===================== */
+
+@media (min-width: 600px) {
+  .attribution {
+    font-size: 3rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4vw;
+
+    margin-block-end: -3rem;
+  }
+}
