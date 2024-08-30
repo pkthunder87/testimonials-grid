@@ -246,19 +246,34 @@
 
     &-rect {
       &-wide {
+        grid-column: span 2;
         &--1 {
           background-position: top right 10.5%;
           background-size: 32%;
+
+          order: 1;
+        }
+
+        &--2 {
+          order: 5;
         }
       }
 
       &-tall {
-        order: -1;
+        grid-column: span 1;
+        grid-row: span 2;
+        order: 3;
       }
     }
 
     &-box {
-      order: 1;
+      &--1 {
+        order: 2;
+      }
+
+      &--2 {
+        order: 4;
+      }
     }
   }
 }
