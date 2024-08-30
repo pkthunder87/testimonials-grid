@@ -3,10 +3,12 @@
    ============= */
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.8rem;
   text-align: center;
+  color: var(--dark-grayish-blue);
 
   text-wrap: balance;
+  margin-block-start: 2em;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

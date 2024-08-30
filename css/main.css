@@ -8,8 +8,9 @@ Also made some adjustments for my own needs
 */
 :root {
   --violet: hsl(263, 55%, 52%);
-  --violet-white: #a775f1;
+  --violet-white: #b7a2d7;
   --dark-grayish-blue: hsl(217, 19%, 35%);
+  --dark-gray: hsl(217, 19%, 55%);
   --dark-blackish-blue: hsl(219, 29%, 14%);
   --white: hsl(0, 0%, 100%);
   --light-gray: hsl(0, 0%, 81%);
@@ -88,13 +89,14 @@ select {
 /* =============
    End of reset 
    ============= */
-/* =============
-   Card
-   ============= */
+/* =================
+   Card Under 600px
+   ================= */
 :root {
   --violet: hsl(263, 55%, 52%);
   --violet-white: #b7a2d7;
   --dark-grayish-blue: hsl(217, 19%, 35%);
+  --dark-gray: hsl(217, 19%, 55%);
   --dark-blackish-blue: hsl(219, 29%, 14%);
   --white: hsl(0, 0%, 100%);
   --light-gray: hsl(0, 0%, 81%);
@@ -120,22 +122,26 @@ select {
 .card .profile__name {
   color: var(--white);
   margin-block-end: 0.1em;
+  font-weight: 600;
   font-size: 1.95rem;
 }
 .card .profile__grad {
-  color: var(--violet-white);
+  color: var(--light-gray);
   font-size: 1.65rem;
+  font-weight: 500;
 }
 .card .subheading {
   color: var(--white);
-  font-size: 3.05rem;
+  font-size: 3rem;
+  font-weight: 600;
   text-wrap: pretty;
   margin-block-end: 0.8em;
 }
 .card .quote {
-  color: var(--violet-white);
+  color: var(--light-gray);
   font-size: 2.1rem;
-  line-height: 1.25em;
+  font-weight: 500;
+  line-height: 1.3em;
   text-wrap: pretty;
   margin-block-end: 1em;
 }
@@ -143,18 +149,24 @@ select {
   background: var(--violet);
   background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: top right 11%;
+  background-position: top right 10.5%;
   background-size: 32%;
 }
 .card-rect-wide--1 .profile__img {
   border: 3px solid var(--violet-white);
+}
+.card-rect-wide--1 .profile__grad {
+  color: var(--violet-white);
+}
+.card-rect-wide--1 .quote {
+  color: var(--violet-white);
 }
 .card-rect-wide--2 {
   background: var(--dark-blackish-blue);
 }
 .card-rect-wide--2 .profile__name,
 .card-rect-wide--2 .subheading {
-  color: var(--white);
+  color: var(--light-grayish-blue);
 }
 .card-rect-wide--2 .profile__grad,
 .card-rect-wide--2 .quote {
@@ -168,11 +180,11 @@ select {
 }
 .card-rect-tall .profile__name,
 .card-rect-tall .subheading {
-  color: var(--dark-blackish-blue);
+  color: var(--dark-grayish-blue);
 }
 .card-rect-tall .profile__grad,
 .card-rect-tall .quote {
-  color: var(--dark-grayish-blue);
+  color: var(--dark-gray);
 }
 .card-box--1 {
   background: var(--dark-grayish-blue);
@@ -182,20 +194,25 @@ select {
 }
 .card-box--2 .profile__name,
 .card-box--2 .subheading {
-  color: var(--dark-blackish-blue);
+  color: var(--dark-grayish-blue);
 }
 .card-box--2 .profile__grad,
 .card-box--2 .quote {
-  color: var(--dark-grayish-blue);
+  color: var(--dark-gray);
 }
 
+/* =================
+   Card 600px - 900px
+   ================= */
 /* =============
    Footer 
    ============= */
 .attribution {
-  font-size: 11px;
+  font-size: 1.8rem;
   text-align: center;
+  color: var(--dark-grayish-blue);
   text-wrap: balance;
+  margin-block-start: 2em;
 }
 
 .attribution a {
