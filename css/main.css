@@ -482,6 +482,9 @@ select {
    Desktop 1440px and above
    ======================== */
 @media (min-width: 1400px) {
+  .grid {
+    margin-block-start: 9.5rem;
+  }
   .attribution {
     font-size: 4rem;
   }
