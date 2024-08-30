@@ -43,7 +43,7 @@
 }
 
 /* =======================
-   Desktop 1100px - 1439px
+   Laptop 1100px - 1439px
    ======================= */
 
 @media (min-width: 1100px) {
@@ -53,8 +53,21 @@
 
   .grid {
     grid-template-columns: repeat(4, 1fr);
-    gap: 2.5vw;
+    column-gap: 2.1vw;
+    row-gap: 1.8vw;
 
     margin-block-end: -3rem;
+
+    max-width: 231.5rem;
+  }
+}
+
+/* ========================
+   Desktop 1440px and above
+   ======================== */
+
+@media (min-width: 1400px) {
+  .attribution {
+    font-size: 4rem;
   }
 }
