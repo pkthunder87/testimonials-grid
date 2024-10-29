@@ -19,6 +19,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 - Flexbox
 - Grid
 - SASS
+- Vite
 
 ## Author
 
